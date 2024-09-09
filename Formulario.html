@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/Formulario.css">
+    <!-- Incluye el CSS de Font Awesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Contacto</title>
+    <style>
+        .whatsapp-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366; /* Color verde de WhatsApp */
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            color: #fff;
+            font-size: 16px;
+            max-width: 300px; /* Ajusta el ancho máximo del contenedor */
+            word-wrap: break-word; /* Asegura que el texto no se desborde */
+            animation: bounce 2s infinite; /* Aplicar animación de rebote */
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .whatsapp-icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        .whatsapp-text {
+            flex: 1; /* Permite que el texto ocupe el espacio restante */
+        }
+
+        .whatsapp-container:hover {
+            background-color: #128C7E; /* Color verde oscuro de WhatsApp al pasar el ratón */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="assets/img/ENVISION.svg" alt="">
+        </div>
+        <div class="form">
+            <form action="Envio.php">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Contáctanos</h1>
+                    </div>
+                    <div class="login-button">
+                        <button><a href="index.html">Ir al sitio</a></button>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Nombre Completo</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Ej: Juan Rodriguez Sanchez" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">Correo Electrónico</label>
+                        <input id="email" type="email" name="email" placeholder="Ej: Juanrodriguezz@gmail.com" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="Texto"><strong>Agrega tus comentarios: </strong></label>
+                        <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+                    </div>
+                </div>
+
+                <div class="continue-button">
+                   <button type="submit">Enviar</button>
+                   <span class="whatsapp-text">Nota: Respondemos alrededor de 24 a 48 hrs.</span>
+                   
+
+                </div>
+               
+            </form>
+        </div>
+    </div>
+
+    <!-- Contenedor del ícono de WhatsApp con texto y animación -->
+    <a href="https://wa.me/522871096503?text=Hola" class="whatsapp-container" target="_blank">
+        <i class="fab fa-whatsapp whatsapp-icon"></i>
+        <span class="whatsapp-text">Respuesta Rápida. Para más información escribanos por aquí. </span>
+    </a>
+</body>
+
+</html>
