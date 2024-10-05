@@ -349,7 +349,7 @@ input {
   width: max-content;
 }
 
-.home__info {
+/*.home__info {
   background-color: var(--morado);
   display: flex;
   padding: 1.5rem 1rem;
@@ -359,7 +359,7 @@ input {
   right: 0;
   bottom: 1rem;
   width: 228px;
-}
+}*/
 .logo-left
 {
   float:left;
@@ -610,8 +610,8 @@ input {
 
 /*=============== PLACES ===============*/
 .place__card, .place__img {
-  max-height: 500px;
-  width: 350px;
+  max-height: 350px;
+  width: 325px;
   text-align: center;
   align-self: start;
 }
