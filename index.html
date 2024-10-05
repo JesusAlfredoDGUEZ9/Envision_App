@@ -87,7 +87,7 @@
 
                     <div class="home__info">
                         <div>
-                            <span class="home__info-title">En ENVISION, estamos aquí para hacer que tu visión digital cobre vida. ¡Únete a nosotros en el viaje hacia el éxito en línea!</span>
+                            <!-- <span class="home__info-title">En ENVISION, estamos aquí para hacer que tu visión digital cobre vida. ¡Únete a nosotros en el viaje hacia el éxito en línea!</span> -->
                             <a href="Consejos.html" class="button button--flex button--link home__info-button">
                                
                             </a>
@@ -102,7 +102,7 @@
 
 
            
-            <!--==================== ABOUT ====================-->
+            <!-- ==================== ABOUT ==================== -->
             <section class="about section" id="about">
                 <div class="about__container container grid">
                     <div class="about__data">
@@ -134,7 +134,11 @@
                     <div class="swiper-wrapper">
                         <!--==================== DISCOVER 1 ====================-->
                         <div class="discover__card swiper-slide">
-                            <img src="assets/img/PAGE-ECOMMERCE.jpg" alt="" class="discover__img">
+                            <picture>
+                                <source srcset="assets/img/PAGE-ECOMMERCE.jpg" media="(max-width: 600px)">
+                                <source srcset="assets/img/PAGE-ECOMMERCE.jpg" media="(min-width: 601px)">
+                                <img src="assets/img/PAGE-ECOMMERCE.jpg" alt="" class="discover__img">
+                            </picture>
                             <div class="discover__data">
                                 <h2 class="discover__title">Atención al cliente.</h2>
                                 
@@ -226,148 +230,96 @@
                 </div>
             </section>
 
+     
+
             <!--==================== PLACES ====================-->
             <section class="place section" id="place">
                 <h2 class="section__title">¿Qué desarrollamos?</h2>
-
-                <div class="place__container container grid">
-                    <!--==================== PLACES CARD 1 ====================-->
-                    <div class="place__card">
-                        <img src="assets/img/WEB-RESTAURANT.png" alt="" class="place__img">
-                        
-                        <div class="place__content">
-                            <span class="place__rating-description">
+                <div class="discover__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--==================== DISCOVER 1 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <picture>
+                                <source srcset="assets/img/PAGE-ECOMMERCE.jpg" media="(max-width: 600px)">
+                                <source srcset="assets/img/WEB-RESTAURANT.png" media="(min-width: 700px)">
+                                <img src="assets/img/WEB-RESTAURANT.png" alt="" class="discover__img">
+                            </picture>
+                            <div class="discover__data">
+                                <form action="https://www.restaurantetriciclo.com/">
+                                    <button
+                                    class="button button--flex-description place__button-description">Sitios Web de Restaurantes.
+                                    </button>
+                                </form>
                                 
-                                <span class="button button--flex-description place__button-description">Sitios Web de Restaurantes.</span>
-                            </span>
-
-                            <div class="place__data">
-                                <!-- <h3 class="place__title">Apropiados para restaurantes, cafeterías, servicios de catering y negocios relacionados con la comida y la bebida.</h3> -->
                             </div>
                         </div>
 
-                        <form action="https://www.restaurantetriciclo.com/">
-                            <button href="" class="button button--flex place__button">
-                                <i class="ri-arrow-right-line"></i>
-                                Ver un ejemplo
-                              </button>
-                          </form>
-
-                       
-                    </div>
-
-                    <!--==================== PLACES CARD 2 ====================-->
-                    <div class="place__card">
-                        <img src="assets/img/SITIO WEB DINAMICO.png" alt="" class="place__img">
-                        
-                        <div class="place__content">
-                            <span class="place__rating">
-                                <span class="button button--flex-description place__button-description"">Sitios web de viajes y turismo.</span>
-                            </span>
-
-                            <div class="place__data">
-                                <!-- <h3 class="place__title">Ideales para agencias de viajes, hoteles, destinos turísticos y empresas relacionadas con el turismo.</h3>                   -->
+                        <!--==================== DISCOVER 2 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/SITIO WEB DINAMICO.png" alt="" class="discover__img">
+                            <div class="discover__data">
+                            <form action="https://es.hoteles.com/">
+                                <button
+                                class="button button--flex-description place__button-description">Sitios web de viajes y turismo.
+                                </button>
+                            </form>
+                           
                             </div>
+            
                         </div>
-                        <form action="https://es.hoteles.com/">
-                            <button href="" class="button button--flex place__button">
-                                <i class="ri-arrow-right-line"></i>Ver un ejemplo
-                            </button>
-                          </form>
-                    </div>
 
-                    <!--==================== PLACES CARD 3 ====================-->
-                     <div class="place__card">
-                        <img src="assets/img/SITIO WEB ECOMMERCE.jpg" alt="" class="place__img">
-                        
-                        <div class="place__content">
-                            <span class="place__rating">
-                                
-                                <span class="button button--flex-description place__button-description"">Sitios Web de Comercio Electrónico.</span>
-                            </span>
-
-                            <div class="place__data">
-                                <!-- <h3 class="place__title">Recomendado para clientes que desean vender productos o servicios en línea.</h3> -->
-                               
+                        <!--==================== DISCOVER 3 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/SITIO WEB ECOMMERCE.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                            <form action="https://www.adidas.mx/">
+                                    <button
+                                    class="button button--flex-description place__button-description">Sitios web de Comercio Electronico.
+                                    </button>
+                            </form>
                             </div>
                         </div>
 
-                        <form action= "https://www.adidas.mx/">
-                            <button href="" class="button button--flex place__button">
-                                <i class="ri-arrow-right-line"></i>Ver un ejemplo
-                            </button>
-                          </form>
-                    </div>
-
-                    <!--==================== PLACES CARD 4 ====================-->
-                    <div class="place__card">
-                        <img src="assets/img/SITIO WEB BLOG.jpeg" alt="" class="place__img">
-                        
-                        <div class="place__content">
-                            <span class="place__rating">
-                            
-                                <span class="button button--flex-description place__button-description"">Sitios Web Personales.</span>
-                            </span>
-
-                            <div class="place__data">
-                                <!-- <h3 class="place__title">Útil para profesionales independientes como artistas, fotógrafos, diseñadores, desarrolladores, etc., que desean exhibir su trabajo y habilidades de manera visualmente atractiva.</h3> -->
-                                
-                            </div>
+                         <!--==================== DISCOVER 4 ====================-->
+                         <div class="discover__card swiper-slide">
+                            <img src="assets/img/SITIO WEB BLOG.jpeg" alt="" class="discover__img">
+                            <div class="discover__data">
                             <form action="https://isamarcial.com.mx/">
-                                <button href="" class="button button--flex place__button">
-                                    <i class="ri-arrow-right-line"></i>Ver un ejemplo
-                                </button>
-                              </form>
+                                    <button
+                                    class="button button--flex-description place__button-description">Sitios web Personales.
+                                    </button>
+                            </form>
+                            </div>
                         </div>
 
-                       
-                    </div>
-
-                    <!--==================== PLACES CARD 5 ====================-->
-                    <div class="place__card">
-                        <img src="assets/img/SITIO WEB NOTICIAS.jpeg" alt="" class="place__img">
-                        
-                        <div class="place__content">
-                            <span class="place__rating">
-                            
-                                <span class="button button--flex-description place__button-description"">Sitios web de noticias y medios.</span>
-                            </span>
-
-                            <div class="place__data">
-                                <!-- <h3 class="place__title">Recomendados para publicaciones en línea, periódicos digitales, revistas y blogs de noticias.</h3> -->
-                                
-                            </div>
+                           <!--==================== DISCOVER 5 ====================-->
+                           <div class="discover__card swiper-slide">
+                            <img src="assets/img/SITIO WEB NOTICIAS.jpeg" alt="" class="discover__img">
+                            <div class="discover__data">
                             <form action="https://www.elpinero.mx/">
-                                <button href="" class="button button--flex place__button">
-                                    <i class="ri-arrow-right-line"></i>Ver un ejemplo
-                                </button>
-                              </form>
-                        </div>
-
-                       
-                    </div>
-
-
-                     <!--==================== PLACES CARD 6 ====================-->
-                     <div class="place__card">
-                        <img src="assets/img/SITIO WEB MEDICO.jpeg" alt="" class="place__img">
-                        
-                        <div class="place__content">
-                            <span class="place__rating">
-                                <span class="button button--flex-description place__button-description"">Sitios web de salud y bienestar.</span>
-                            </span>
-
-                            <div class="place__data">
-                                <!-- <h3 class="place__title">Apropiados para clínicas, consultorios médicos, centros de bienestar y profesionales de la salud que desean proporcionar información sobre servicios médicos.</h3> -->
+                                    <button
+                                    class="button button--flex-description place__button-description">Sitios web de noticias y medios.
+                                    </button>
+                            </form>
                             </div>
                         </div>
-                        <form action="https://www.veterinariadelbosque.com/">
-                            <button href="" class="button button--flex place__button">
-                                <i class="ri-arrow-right-line"></i>Ver un ejemplo
-                            </button>
-                          </form>                
+
+                        <!--==================== DISCOVER 6 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/SITIO WEB MEDICO.jpeg" alt="" class="discover__img">
+                            <div class="discover__data">
+                            <form action="https://www.veterinariadelbosque.com/">
+                                    <button
+                                    class="button button--flex-description place__button-description">Sitios web de salud y bienestar.
+                                    </button>
+                             </form>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
+
+             
             </section>
 
             <!--==================== SUBSCRIBE ====================-->
