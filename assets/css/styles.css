@@ -230,7 +230,7 @@ input {
   position: relative;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
     background-color: var(--body-color);
@@ -609,11 +609,13 @@ input {
 }
 
 /*=============== PLACES ===============*/
+@media screen and (max-width: 320px) {
 .place__card, .place__img {
   max-height: 350px;
   width: 325px;
   text-align: center;
   align-self: start;
+}
 }
 
 
